@@ -3,7 +3,7 @@ import * as React from "react"
 import * as Oni from "oni-api"
 
 export const activate = (oni: Oni.Plugin.Api) => {
-    console.log("config activated")
+    console.log("config activated");
 
     // Input
     //
@@ -39,5 +39,5 @@ export const configuration = {
     // UI customizations
     "ui.animations.enabled": true,
     "ui.fontSmoothing": "auto",
-        "language.go.languageServer.command": "",
+    "language.go.languageServer.command": "",
 }
