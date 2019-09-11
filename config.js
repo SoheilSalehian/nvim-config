@@ -25,7 +25,7 @@ exports.configuration = {
     "commandline.mode": true,
     "wildmenu.mode": false,
     // "tabs.mode"                : "native", // Use vim's tabline, need completely quit Oni and restart a few times
-    "statusbar.enabled": false,
+    "statusbar.enabled": true,
     "sidebar.enabled": true,
     "sidebar.default.open": false,
     "learning.enabled": false,
@@ -34,7 +34,25 @@ exports.configuration = {
     "editor.textMateHighlighting.enabled": false,
     "ui.animations.enabled": true,
     "ui.fontSmoothing": "auto",
-    "language.go.languageServer.command": ""
+    "language.go.languageServer.command": "",
+    "experimental.markdownPreview.enabled": true,
+    "oni.plugins.prettier": {
+        settings: {
+            semi: false,
+            tabWidth: 2,
+            useTabs: false,
+            singleQuote: false,
+            trailingComma: "es5",
+            bracketSpacing: true,
+            jsxBracketSameLine: false,
+            arrowParens: "avoid",
+            printWidth: 80
+        },
+        // TODO: Set this to true to enable formatting on save
+        formatOnSave: true,
+        // TODO: Set this to true to enable the plugin
+        enabled: true
+    }
 };
 //export const configuration = {
 //    //add custom config here, such as
